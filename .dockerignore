@@ -9,4 +9,5 @@ __pycache__
 **/*.jpg
 **/*.jpeg
 **/*.h5
-/fine_tuned_model
+/morph
+/venv

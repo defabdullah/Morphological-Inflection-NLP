@@ -5,4 +5,4 @@
 #SBATCH --mem-per-gpu=40G
 
 source /opt/python3/venv/base/bin/activate
-python3 '/opt/python3/venv/base/morphological-inflection-nlp/train.py' --output_dir '/users/ahmet.susuz/morph/' --train_file '/users/ahmet.susuz/eng_train.txt' --val_file '/users/ahmet.susuz/eng_val.txt' --epoch 3000
+python3 '/opt/python3/venv/base/morphological-inflection-nlp/train.py' --output_dir '/users/ahmet.susuz/morph/' --train_file '/users/ahmet.susuz/eng_train.txt' --val_file '/users/ahmet.susuz/eng_val.txt' --epoch 200 --batch_size 32 --learning_rate 1e-5 --d_model 512 --num_heads 8 --dff 512 --dropout_rate 0.2

@@ -7,6 +7,8 @@ from tensorflow.keras.layers import Input, Embedding, Dense
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 import numpy as np
 import matplotlib.pyplot as plt
+from nltk.translate.bleu_score import sentence_bleu
+import Levenshtein as lev
 
 # Prepare input data for BERT
 def prepare_bert_input(texts, tokenizer, max_len):
@@ -73,15 +75,32 @@ def create_masked_language_samples(texts, mask_prob=0.15):
     
     return masked_sequences, labels
 
-def evaluate_model(model, X_test, y_test):
-    predictions = model.predict(X_test)
-    predicted_labels = np.argmax(predictions, axis=-1)
-    true_labels = np.argmax(y_test, axis=-1)
+def evaluate_model(model, x_test, y_test, tokenizer):
+    y_pred = model.predict(x_test)
+    y_pred_ids = np.argmax(y_pred, axis=-1)
+    y_test_ids = y_test
 
-    accuracy = accuracy_score(true_labels, predicted_labels)
-    precision, recall, f1, _ = precision_recall_fscore_support(true_labels, predicted_labels, average='macro')
+    y_pred_texts = tokenizer.sequences_to_texts(y_pred_ids)
+    y_test_texts = tokenizer.sequences_to_texts(y_test_ids)
 
-    return accuracy, precision, recall, f1
+    # Calculate Levenshtein distances
+    lev_distances = [lev.distance(t, p) for t, p in zip(y_test_texts, y_pred_texts)]
+    avg_lev_distance = np.mean(lev_distances)
+
+    # Calculate BLEU score
+    bleu_scores = [sentence_bleu([t], p) for t, p in zip(y_test_texts, y_pred_texts)]
+    avg_bleu_score = np.mean(bleu_scores)
+
+    # Calculate accuracy
+    y_pred_flat = [item for sublist in y_pred_ids for item in sublist]
+    y_test_flat = [item for sublist in y_test_ids for item in sublist]
+    accuracy = accuracy_score(y_test_flat, y_pred_flat)
+
+    return {
+        'accuracy': accuracy,
+        'avg_lev_distance': avg_lev_distance,
+        'avg_bleu_score': avg_bleu_score
+    }
 
 # Visualize results
 def plot_results(results, model_type):
