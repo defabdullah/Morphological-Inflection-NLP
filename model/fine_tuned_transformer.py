@@ -1,3 +1,5 @@
+import tensorflow as tf
+
 class FineTunedTransformer(tf.keras.Model):
     def __init__(self, transformer, vocab_size):
         super(FineTunedTransformer, self).__init__()

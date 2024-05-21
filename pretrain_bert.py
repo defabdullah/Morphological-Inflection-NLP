@@ -40,12 +40,8 @@ fine_tuned_model = FineTunedTransformer(transformer_model, vocab_size)
 optimizer = tf.keras.optimizers.Adam(learning_rate=args.learning_rate)
 fine_tuned_model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-def prepare_bert_input(texts, tokenizer, max_len):
-    return dict(tokenizer(texts, max_length=max_len, padding='max_length', truncation=True, return_tensors='tf'))
-
 X_train_bert = prepare_bert_input(train_x, tokenizer_bert, max_len)
 X_val_bert = prepare_bert_input(val_x, tokenizer_bert, max_len)
-
 history = fine_tuned_model.fit(X_train_bert, y_train, epochs=args.epochs, batch_size=args.batch_size, validation_data=(X_val_bert, y_val))
 
 # Save the model

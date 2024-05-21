@@ -4,6 +4,13 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Input, Embedding, Dense
+from sklearn.metrics import precision_recall_fscore_support, accuracy_score
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Prepare input data for BERT
+def prepare_bert_input(texts, tokenizer, max_len):
+    return dict(tokenizer(texts, max_length=max_len, padding='max_length', truncation=True, return_tensors='tf'))
 
 # Helper function for transformer encoder block
 def transformer_encoder(inputs, head_size, num_heads, ff_dim, dropout=0):
@@ -65,3 +72,26 @@ def create_masked_language_samples(texts, mask_prob=0.15):
         labels.append(label)
     
     return masked_sequences, labels
+
+def evaluate_model(model, X_test, y_test):
+    predictions = model.predict(X_test)
+    predicted_labels = np.argmax(predictions, axis=-1)
+    true_labels = np.argmax(y_test, axis=-1)
+
+    accuracy = accuracy_score(true_labels, predicted_labels)
+    precision, recall, f1, _ = precision_recall_fscore_support(true_labels, predicted_labels, average='macro')
+
+    return accuracy, precision, recall, f1
+
+# Visualize results
+def plot_results(results, model_type):
+    plt.figure(figsize=(12, 6))
+    history = results[model_type]
+    plt.plot(history['accuracy'], label=f"Train Accuracy")
+    plt.plot(history['val_accuracy'], label=f"Val Accuracy")
+    plt.title(f'{model_type} Model Accuracy')
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
