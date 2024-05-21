@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+Dockerfile
+**/*.pyc
+**/*.pyo
+**/*.pyd
+__pycache__
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.h5
+/fine_tuned_model
