@@ -1,600 +1,454 @@
-fill	
-bend	
-vomit	
-ticket	
-sting	
-fetch	
-gloop	
-mine	
-bruise	
-gasp	
-realize	
-truck	
-top	
-flitter	
-land	
-examine	
-air	
-transmit	
-mirror	
-hallow	
-stow	
-pool	
-mix	
-spot	
-correlate	
-trail	
-whiz	
-refer	
-empty	
-cram	
-practise	
-evaporate	
-salvage	
-pattern	
-pickle	
-kneel	
-perfect	
-mush	
-visit	
-scissor	
-sprinkle	
-ache	
-couple	
-dump	
-supply	
-put	
-reply	
-sparkle	
-addict	
-fizz	
-powder	
-fracture	
-bring	
-monopolize	
-shout	
-astonish	
-shine	
-delineate	
-guy	
-score	
-ride	
-gesture	
-suppose	
-holler	
-cant	
-promise	
-power	
-saw	
-disgust	
-pat	
-nest	
-earn	
-sober	
-fling	
-pervert	
-spoon	
-bleep	
-graze	
-interpret	
-flavor	
-thump	
-peep	
-better	
-vacuum	
-fold	
-loot	
-pavilion	
-throttle	
-tangle	
-log	
-king	
-deprive	
-poke	
-wax	
-cash	
-fake	
-crush	
-bumble	
-temper	
-beep	
-convince	
-jiggle	
-bellow	
-stimulate	
-capture	
-black	
-receive	
-plug	
-dismantle	
-aspirate	
-bark	
-accuse	
-beg	
-broil	
-hunt	
-thunder	
-yap	
-jab	
-latch	
-tap	
-grab	
-shampoo	
-embarrass	
-gum	
-lure	
-shock	
-drool	
-blame	
-zonk	
-thin	
-pay	
-serve	
-howl	
-break	
-derail	
-swaddle	
-fidget	
-freeze	
-knacker	
-intimate	
-jangle	
-stymie	
-cope	
-cut	
-cheat	
-draw	
-spread	
-fascinate	
-tempt	
-cuddle	
-close	
-budge	
-nettle	
-paste	
-cock	
-coach	
-withstand	
-bank	
-tally	
-obey	
-phone	
-circle	
-triple	
-supplement	
-translate	
-dine	
-imply	
-engross	
-enthrall	
-sacrifice	
-climb	
-manufacture	
-splat	
-twiddle	
-wound	
-dangle	
-ham	
-contain	
-reflect	
-dispose	
-suspend	
-trump	
-snoop	
-mass	
-bleed	
-flourish	
-finish	
-name	
-gas	
-publish	
-face	
-focus	
-button	
-suit	
-resemble	
-seed	
-sledge	
-prod	
-plunge	
-identify	
-splinter	
-bin	
-careen	
-gyp	
-let	
-moan	
-hiccup	
-smoosh	
-spade	
-track	
-mend	
-rough	
-ready	
-bead	
-instigate	
-nurse	
-ice	
-bust	
-woof	
-crackle	
-imprint	
-cry	
-can	
-sand	
-materialize	
-pray	
-scoff	
-charm	
-ail	
-chunter	
-dodge	
-haw	
-startle	
-stack	
-part	
-clink	
-detach	
-prompt	
-accustom	
-train	
-transfer	
-weaken	
-talk	
-associate	
-dust	
-sharpen	
-faint	
-chirp	
-expose	
-discipline	
-demonstrate	
-chink	
-brick	
-decapitate	
-must	
-nip	
-happen	
-creep	
-pout	
-flatten	
-arrive	
-park	
-attach	
-dry	
-stub	
-stomp	
-nurture	
-tinkle	
-jive	
-title	
-whisk	
-enunciate	
-ring	
-jump	
-shrug	
-boing	
-juggle	
-poof	
-cave	
-avoid	
-penetrate	
-share	
-shoo	
-buck	
-wee	
-page	
-spend	
-patch	
-sun	
-guard	
-fine	
-pronounce	
-hoist	
-flatter	
-gather	
-correct	
-total	
-weave	
-excuse	
-hurry	
-reckon	
-strand	
-peak	
-fuss	
-blink	
-toss	
-snug	
-attempt	
-roof	
-clock	
-zigzag	
-enroll	
-sustain	
-smother	
-sit	
-minute	
-cap	
-balance	
-despise	
-tie	
-praise	
-shear	
-own	
-tease	
-petrify	
-peeve	
-rip	
-spice	
-thrash	
-scone	
-grant	
-sell	
-baffle	
-respect	
-foot	
-clap	
-wriggle	
-video	
-disguise	
-ski	
-describe	
-adventure	
-listen	
-produce	
-do	
-stone	
-muddy	
-please	
-smash	
-suck	
-turf	
-bug	
-intersperse	
-invent	
-pepper	
-try	
-tumble	
-engage	
-interrupt	
-spear	
-hug	
-inspire	
-sew	
-whip	
-shriek	
-incapacitate	
-read	
-blank	
-formulate	
-admit	
-spam	
-toot	
-inform	
-brake	
-fool	
-damn	
-squeal	
-dance	
-tape	
-dash	
-squelch	
-shush	
-shimmy	
-murder	
-seesaw	
-shrink	
-chicken	
-brew	
-abuse	
-fester	
-coo	
-waste	
-adopt	
-drift	
-exclaim	
-push	
-bicycle	
-rove	
-die	
-tire	
-whap	
-complete	
-decorate	
-forgive	
-tick	
-squish	
-bias	
-buy	
-build	
-deliver	
-foresee	
-correspond	
-foul	
-crock	
-gulp	
-bully	
-tickle	
-intensify	
-class	
-purchase	
-pen	
-construct	
-position	
-costume	
-zap	
-experience	
-brace	
-test	
-imbibe	
-tail	
-game	
-relay	
-spring	
-summarize	
-absorb	
-down	
-load	
-puddle	
-feel	
-smooch	
-skew	
-credit	
-near	
-claw	
-wreck	
-blanket	
-discover	
-gun	
-tidy	
-char	
-dive	
-ram	
-rate	
-ping	
-detail	
-suggest	
-boom	
-move	
-side	
-reject	
-whistle	
-couch	
-appear	
-parrot	
-mold	
-bud	
-bawl	
-light	
-bulge	
-bonk	
-bribe	
-winter	
-regret	
-date	
-harrow	
-distinguish	
-retain	
-erase	
-dominate	
-flower	
-have	
-spray	
-entertain	
-band	
-cover	
-motor	
-number	
-lick	
-radio	
-live	
-manipulate	
-model	
-size	
-specify	
-strengthen	
-nibble	
-disrupt	
-insist	
-crack	
-knife	
-help	
-entitle	
-go	
-chalk	
-concern	
-pick	
-seal	
-err	
-shave	
-mash	
-chip	
-separate	
-branch	
-fluff	
-fixate	
-slide	
-measure	
-string	
-interview	
-investigate	
-volunteer	
-frame	
-amaze	
-ply	
-snow	
-fan	
-behave	
-soak	
-spike	
-sink	
-craze	
-cheep	
-remember	
-dread	
-cook	
-chew	
-splay	
-gravitate	
-waffle	
-get	
-growl	
-whack	
-equate	
-spook	
-bite	
-trace	
-peddle	
-grasp	
-strangle	
-doubt	
-kiss	
-theme	
-protest	
-condense	
-rid	
-weed	
-sort	
-cure	
-direct	
-towel	
-awaken	
-plop	
-brown	
-align	
-free	
-achieve	
-buckle	
-seek	
-huff	
-patter	
-add	
-involve	
-scold	
-sponge	
-drown	
-plan	
-bop	
-compare	
-call	
-merchandise	
-stab	
-slime	
-develop	
-flake	
-inspect	
-drain	
-dog	
-boogie	
-sneeze	
-imprison	
-activate	
-fasten	
-confiscate	
-wheel	
-suspect	
-massage	
-cough	
-flour	
-dial	
-plaster	
+wrestle	wrestled
+conceive	conceived
+frustrate	frustrated
+fall	fell
+sire	sired
+chop	chopped
+soar	soared
+carry	carried
+grind	ground
+soap	soaped
+pass	passed
+modify	modified
+shovel	shoveled
+gleam	gleamed
+argue	argued
+sashay	sashayed
+punch	punched
+wing	winged
+thaw	thawed
+splish	splished
+wag	wagged
+bet	bet
+solve	solved
+slosh	sloshed
+damage	damaged
+become	became
+press	pressed
+settle	settled
+ruff	ruffed
+boil	boiled
+sue	sued
+skip	skipped
+warm	warmed
+drat	dratted
+trouble	troubled
+book	booked
+abandon	abandoned
+rob	robbed
+recommend	recommended
+sprout	sprouted
+yawn	yawned
+woman	womaned
+question	questioned
+oil	oiled
+ignore	ignored
+continue	continued
+confuse	confused
+further	furthered
+compromise	compromised
+zip	zipped
+bump	bumped
+return	returned
+devastate	devastated
+pull	pulled
+smudge	smudged
+congest	congested
+puzzle	puzzled
+jack	jacked
+acknowledge	acknowledged
+hiss	hissed
+request	requested
+perk	perked
+man	manned
+enter	entered
+pound	pounded
+detour	detoured
+tend	tended
+twist	twisted
+counter	countered
+green	greened
+glue	glued
+shoe	shod
+funnel	funneled
+squirm	squirmed
+ripen	ripened
+believe	believed
+hide	hid
+buzz	buzzed
+swat	swatted
+max	maxed
+fix	fixed
+kick	kicked
+dunk	dunked
+drum	drummed
+whinge	whinged
+choke	choked
+simmer	simmered
+label	labeled
+bolt	bolted
+corner	cornered
+sound	sounded
+join	joined
+slouch	slouched
+peel	peeled
+thank	thanked
+crumple	crumpled
+table	tabled
+smoke	smoked
+coordinate	coordinated
+unite	united
+state	stated
+compile	compiled
+agree	agreed
+eat	ate
+limit	limited
+flirt	flirted
+expand	expanded
+clonk	clonked
+brave	braved
+best	bested
+ditch	ditched
+star	starred
+honour	honoured
+warp	warped
+invite	invited
+write	wrote
+spare	spared
+connect	connected
+keen	keened
+waddle	waddled
+rationalize	rationalized
+blow	blew
+schedule	scheduled
+articulate	articulated
+round	rounded
+regurgitate	regurgitated
+interject	interjected
+iron	ironed
+slither	slithered
+crash	crashed
+awake	awoke
+badger	badgered
+color	colored
+remove	removed
+leave	left
+demand	demanded
+sop	sopped
+wipe	wiped
+look	looked
+fear	feared
+master	mastered
+lean	leaned
+organize	organized
+smart	smarted
+animate	animated
+pinch	pinched
+hatch	hatched
+sulk	sulked
+stink	stunk
+bore	bored
+fence	fenced
+love	loved
+line	lined
+true	trued
+toddle	toddled
+comment	commented
+cheer	cheered
+blur	blurred
+change	changed
+dispense	dispensed
+steam	steamed
+roll	rolled
+finger	fingered
+alarm	alarmed
+ship	shipped
+gouge	gouged
+occupy	occupied
+hang	hung
+stumble	stumbled
+console	consoled
+effect	effected
+tame	tamed
+structure	structured
+grumble	grumbled
+match	matched
+sign	signed
+munch	munched
+speckle	speckled
+deposit	deposited
+scamper	scampered
+participate	participated
+cast	cast
+steady	steadied
+send	sent
+crop	cropped
+create	created
+urinate	urinated
+marry	married
+imitate	imitated
+chomp	chomped
+chuff	chuffed
+erupt	erupted
+demolish	demolished
+grin	grinned
+key	keyed
+fish	fished
+appropriate	appropriated
+exasperate	exasperated
+adjust	adjusted
+aggravate	aggravated
+drowse	drowsed
+ensure	ensured
+derive	derived
+till	tilled
+fare	fared
+except	excepted
+conduct	conducted
+crease	creased
+ooh	oohed
+hoot	hooted
+review	reviewed
+puke	puked
+mat	matted
+poop	pooped
+wet	wet
+determine	determined
+restrain	restrained
+obtain	obtained
+strike	struck
+fail	failed
+vibrate	vibrated
+scale	scaled
+wield	wielded
+bask	basked
+interfere	interfered
+catch	caught
+wander	wandered
+afford	afforded
+belch	belched
+spill	spilled
+dress	dressed
+hoover	hoovered
+crinkle	crinkled
+shy	shied
+navigate	navigated
+shadow	shadowed
+tweet	tweeted
+bill	billed
+plant	planted
+study	studied
+smarten	smartened
+sum	summed
+muscle	muscled
+clog	clogged
+shatter	shattered
+burp	burped
+harbor	harbored
+pertain	pertained
+oppose	opposed
+tender	tendered
+delete	deleted
+gag	gagged
+flop	flopped
+rejoice	rejoiced
+will	would
+lace	laced
+initiate	initiated
+delight	delighted
+whisper	whispered
+sense	sensed
+orient	oriented
+worry	worried
+attract	attracted
+bloom	bloomed
+locate	located
+relate	related
+explore	explored
+squeeze	squeezed
+bash	bashed
+trust	trusted
+wrong	wronged
+answer	answered
+queue	queued
+ponder	pondered
+hear	heard
+thread	threaded
+use	used
+impress	impressed
+gain	gained
+hate	hated
+catapult	catapulted
+contact	contacted
+twitch	twitched
+stay	stayed
+wind	wound
+approve	approved
+tissue	tissued
+clean	cleaned
+jar	jarred
+trap	trapped
+pour	poured
+doll	dolled
+discard	discarded
+insert	inserted
+double	doubled
+shift	shifted
+outfit	outfitted
+grip	gripped
+apply	applied
+configure	configured
+stare	stared
+subdue	subdued
+diet	dieted
+belt	belted
+dent	dented
+crank	cranked
+boat	boated
+case	cased
+bridge	bridged
+establish	established
+trigger	triggered
+butter	buttered
+reinforce	reinforced
+stall	stalled
+repair	repaired
+wire	wired
+civilize	civilized
+squirt	squirted
+slam	slammed
+velcro	velcroed
+mock	mocked
+force	forced
+mime	mimed
+boost	boosted
+may	might
+disappoint	disappointed
+stew	stewed
+lie	lay
+swell	swelled
+core	cored
+batter	battered
+slurp	slurped
+kidnap	kidnapped
+pardon	pardoned
+summon	summoned
+relegate	relegated
+deck	decked
+crucify	crucified
+divide	divided
+need	needed
+bulldoze	bulldozed
+scuff	scuffed
+classify	classified
+record	recorded
+tatter	tattered
+tar	tarred
+hook	hooked
+jaundice	jaundiced
+scribble	scribbled
+bother	bothered
+sentence	sentenced
+eye	eyed
+mew	mewed
+melt	melted
+board	boarded
+forget	forgot
+whirl	whirled
+elaborate	elaborated
+strain	strained
+glow	glowed
+beat	beat
+wrap	wrapped
+empower	empowered
+crown	crowned
+catalogue	catalogued
+cloud	clouded
+caw	cawed
+pig	pigged
+advise	advised
+swirl	swirled
+observe	observed
+swipe	swiped
+generate	generated
+jabber	jabbered
+print	printed
+freshen	freshened
+tag	tagged
+bam	bammed
+lasso	lassoed
+sigh	sighed
+travel	traveled
+specialize	specialized
+water	watered
+bum	bummed
+wallop	walloped
+wedge	wedged
+scramble	scrambled
+tilt	tilted
+sail	sailed
+abide	abided
+dig	dug
+shepherd	shepherded
+predict	predicted
+diagnose	diagnosed
+scoot	scooted
+peck	pecked
+pamper	pampered
+sip	sipped
+dedicate	dedicated
+consume	consumed
+make	made
+crayon	crayoned
+narrow	narrowed
+dirty	dirtied
+post	posted
+clunk	clunked
+stream	streamed
+fulfill	fulfilled
+found	founded
+pivot	pivoted
+story	storied
+one	oned
+wait	waited
+wrinkle	wrinkled
+sock	socked
+precede	preceded
+swear	swore
+zipper	zippered
+purr	purred
+stutter	stuttered
+plunk	plunked
+communicate	communicated
+broom	broomed
+bubble	bubbled
+experiment	experimented
+milk	milked
+grunt	grunted
+roar	roared
+loaf	loafed
+sticker	stickered
+torment	tormented
+whine	whined
+store	stored
+privilege	privileged
+lower	lowered
+balloon	ballooned
+stand	stood
+hit	hit
+save	saved
+plough	ploughed
+smear	smeared
+throw	threw
+frolick	frolicked
+noise	noised
+hammer	hammered
+babble	babbled
+slobber	slobbered
+program	programmed
+hinder	hindered
+spy	spied
+obsess	obsessed
+carol	caroled
+tolerate	tolerated
+jimmy	jimmied
