@@ -40,8 +40,9 @@ def main(output_dir):
     with open(f'{fused_model_path}/fused_history.json', 'r') as f:
         fused_history = json.load(f)
     
-    plot_history(direct_history, 'Direct Model', output_dir)
-    plot_history(fused_history, 'Fused Model', output_dir)
+    plot_history(direct_history, 'direct_model_plot', direct_model_path)
+    plot_history(fused_history, 'fused_model_plot', fused_model_path)
+    print("Plots saved.")
     
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
