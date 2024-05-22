@@ -40,6 +40,7 @@ train_x, train_y = load_and_prepare_data(args.train_file)
 val_x, val_y = load_and_prepare_data(args.val_file)
 
 max_len = max(max(len(verb) for verb in train_x + train_y + val_x + val_y), 10)
+print("Max length:", max_len)
 
 character_bert = get_character_bert()
 tokenizer_bert = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
@@ -81,13 +82,26 @@ fused_model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy',
 direct_model_path = f"{args.output_dir}/direct_model_dm{d_model}_nh{num_heads}_dff{dff}_dr{dropout_rate}"
 fused_model_path = f"{args.output_dir}/fused_model_dm{d_model}_nh{num_heads}_dff{dff}_dr{dropout_rate}"
 
+direct_history_path = direct_model_path + '/direct_history.json'
+fused_history_path = fused_model_path + '/fused_history.json'
+
+direct_history = {}
+fused_history = {}
+
 if args.resume_training:
     if os.path.exists(direct_model_path):
         print(f"Loading and resuming training for DirectModel from {direct_model_path}")
-        direct_model = tf.keras.models.load_model(direct_model_path, custom_objects={'DirectModel': DirectModel})
+        direct_model = tf.keras.models.load_model(direct_model_path)
     if os.path.exists(fused_model_path):
         print(f"Loading and resuming training for FusedModel from {fused_model_path}")
-        fused_model = tf.keras.models.load_model(fused_model_path, custom_objects={'FusedModel': FusedModel})
+        fused_model = tf.keras.models.load_model(fused_model_path)
+
+    if os.path.exists(direct_history_path):
+        with open(direct_history_path, 'r') as f:
+            direct_history = json.load(f)
+    if os.path.exists(fused_history_path):
+        with open(fused_history_path, 'r') as f:
+            fused_history = json.load(f)
 
 early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
@@ -95,26 +109,39 @@ train_inputs = {'input_ids': train_input_ids, 'attention_mask': train_attention_
 val_inputs = {'input_ids': val_input_ids, 'attention_mask': val_attention_mask}
 
 print("Training Direct Model...")
-direct_history = direct_model.fit(
+new_direct_history = direct_model.fit(
     train_inputs, train_labels,
     validation_data=(val_inputs, val_labels),
     epochs=args.epochs, batch_size=args.batch_size, verbose=2,
     callbacks=[early_stopping]
-)
+).history
 
 print("Training Fused Model...")
-fused_history = fused_model.fit(
+new_fused_history = fused_model.fit(
     train_inputs, train_labels,
     validation_data=(val_inputs, val_labels),
     epochs=args.epochs, batch_size=args.batch_size, verbose=2,
     callbacks=[early_stopping]
-)
+).history
+
+# Append new history to existing history
+for key, values in new_direct_history.items():
+    if key in direct_history:
+        direct_history[key].extend(values)
+    else:
+        direct_history[key] = values
+
+for key, values in new_fused_history.items():
+    if key in fused_history:
+        fused_history[key].extend(values)
+    else:
+        fused_history[key] = values
 
 direct_model.save(direct_model_path)
 fused_model.save(fused_model_path)
 
 # Save history
-with open(direct_model_path + 'direct_history.json', 'w') as f:
-    json.dump(direct_history.history, f)
-with open(fused_model_path + 'fused_history.json', 'w') as f:
-    json.dump(fused_history.history, f)
+with open(direct_model_path + '/direct_history.json', 'w') as f:
+    json.dump(direct_history, f)
+with open(fused_model_path + '/fused_history.json', 'w') as f:
+    json.dump(fused_history, f)

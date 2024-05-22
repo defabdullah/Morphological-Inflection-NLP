@@ -78,17 +78,17 @@ def create_masked_language_samples(texts, mask_prob=0.15):
 def evaluate_model(model, x_test, y_test, tokenizer):
     y_pred = model.predict(x_test)
     y_pred_ids = np.argmax(y_pred, axis=-1)
-    y_test_ids = y_test
+    y_test_ids = y_test.numpy()
 
-    y_pred_texts = tokenizer.sequences_to_texts(y_pred_ids)
-    y_test_texts = tokenizer.sequences_to_texts(y_test_ids)
+    y_pred_texts = tokenizer.batch_decode(y_pred_ids, skip_special_tokens=True)
+    y_test_texts = tokenizer.batch_decode(y_test_ids, skip_special_tokens=True)
 
     # Calculate Levenshtein distances
     lev_distances = [lev.distance(t, p) for t, p in zip(y_test_texts, y_pred_texts)]
     avg_lev_distance = np.mean(lev_distances)
 
     # Calculate BLEU score
-    bleu_scores = [sentence_bleu([t], p) for t, p in zip(y_test_texts, y_pred_texts)]
+    bleu_scores = [sentence_bleu([t.split()], p.split()) for t, p in zip(y_test_texts, y_pred_texts)]
     avg_bleu_score = np.mean(bleu_scores)
 
     # Calculate accuracy
